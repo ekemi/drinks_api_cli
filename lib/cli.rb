@@ -37,8 +37,8 @@ class Cli
                Api.get_drink_details(drink) if !drink.instructions
                print_drink_details(drink)
 
-           elsif input =="ingredient"
-               start_with_ingredient
+           #elsif input =="ingredient"
+               #start_with_ingredient
            else
                puts" "
                error
