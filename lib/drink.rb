@@ -5,6 +5,7 @@ attr_accessor :drink_name, :drink_id, :link_picture,:ingredient, :instructions ,
 
 def initialize(drink_name:,link_picture: ,drink_id:, ingredient:)
     @drink_name = drink_name
+    @drink_id = drink_id
 
 end
 end
