@@ -64,6 +64,17 @@ class Cli
         #binding.pry
         print_drinks(Drink.all)
     end
+
+    def print_drinks(data)
+
+        puts" "
+        puts"The list of drinks made with #{@input_ingredient}".light_blue
+        puts" "
+         data.each.with_index(1) do |key, value| #Iterate to get all the drinks.
+            puts "#{value}. #{key.drink_name}"                
+        end
+     end
+
   
 
 end
