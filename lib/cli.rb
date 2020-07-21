@@ -80,6 +80,9 @@ class Cli
             puts"Type 'ingredient' to select a new ingredient.".yellow
             puts"Type 'exit' to exit the program.".red
          end
+         def goodbye
+            puts" Have a wonderful day!"
+         end
      end
 
   
