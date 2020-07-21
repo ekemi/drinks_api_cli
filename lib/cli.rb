@@ -35,7 +35,6 @@ class Cli
            elsif input.to_i > 0  && input.to_i <= Drink.find_by_ingredient(@input_ingredient).length
                drink = Drink.find_by_ingredient(@input_ingredient)[input.to_i-1]
                Api.get_drink_details(drink) if !drink.instructions
-                  # Api.get_drink_details(drink)
                print_drink_details(drink)
 
            elsif input =="ingredient"
