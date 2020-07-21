@@ -73,6 +73,13 @@ class Cli
          data.each.with_index(1) do |key, value| #Iterate to get all the drinks.
             puts "#{value}. #{key.drink_name}"                
         end
+        def user_choice
+            puts" "
+            puts"Type a number to see the instruction for a drink.".green
+            puts"Type 'list' to see the list of drinks again.".blue
+            puts"Type 'ingredient' to select a new ingredient.".yellow
+            puts"Type 'exit' to exit the program.".red
+         end
      end
 
   
