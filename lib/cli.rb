@@ -54,7 +54,16 @@ class Cli
         puts""
         puts"Your entered a wrong information, try again!".red
     end
- 
+
+    def   start_with_ingredient
+        puts"  "
+        puts"Enter an ingredient to see all the drinks made with that ingredient.".yellow
+        puts" "
+        @input_ingredient = gets.strip.downcase
+        Api.get_drinks(@input_ingredient)
+        #binding.pry
+        print_drinks(Drink.all)
+    end
   
 
 end
