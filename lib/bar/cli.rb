@@ -77,7 +77,6 @@ class Cli
             puts" "
             puts"Type a number to see the instruction for a drink.".green
             puts"Type 'list' to see the list of drinks again.".blue
-            puts"Type 'ingredient' to select a new ingredient.".yellow
             puts"Type 'exit' to exit the program.".red
          end
          def goodbye
