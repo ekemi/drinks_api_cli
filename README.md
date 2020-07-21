@@ -1,0 +1,1 @@
+This Ruby project allows an user to select an ingredient and is able to see the drink made with that ingredient. I used an API to make it. The website I used is : https://www.thecocktaildb.com/api.php .
