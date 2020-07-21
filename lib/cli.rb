@@ -49,6 +49,12 @@ class Cli
         end
         puts""
         goodbye
+    end   
+    def error
+        puts""
+        puts"Your entered a wrong information, try again!".red
+    end
+ 
   
 
 end
