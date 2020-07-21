@@ -83,6 +83,16 @@ class Cli
          def goodbye
             puts" Have a wonderful day!"
          end
+         def print_drink_details(drink)
+            puts"The recipe of #{drink.drink_name} drink.".yellow
+            puts"**********************************".red
+            puts "Category: #{drink.category}."
+            puts "Changed_date: #{drink.changed_date}."
+            puts "Glass: #{drink.glass}."
+            puts "Measure: #{drink.measure}."
+            puts "Instruction: #{drink.instructions}."
+            puts"**********************************".red
+         end    
      end
 
   
