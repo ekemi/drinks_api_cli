@@ -60,9 +60,14 @@ class Cli
         puts"Enter an ingredient to see all the drinks made with that ingredient.".yellow
         puts" "
         @input_ingredient = gets.strip.downcase
-        Api.get_drinks(@input_ingredient)
-        #binding.pry
-        print_drinks(Drink.all)
+        begin
+            Api.get_drinks(@input_ingredient)
+            #binding.pry
+            print_drinks(Drink.all)
+        rescue
+          print "wrong"
+          start_with_ingredient
+        end
     end
 
     def print_drinks(data)
